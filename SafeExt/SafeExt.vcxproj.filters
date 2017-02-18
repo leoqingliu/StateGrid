@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c5450b01-05da-41c6-8b61-8986f9f8c2f8}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{cbc6e34b-43fe-44f8-9d92-5238b3ed8e36}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ecfc3181-0887-45bc-953c-366cfb4db6da}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{68c034eb-6e51-4a71-914a-92a9606aa379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\7z">
+      <UniqueIdentifier>{56b2943c-ca1f-4d0d-b82b-1bbfd2dbb840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\jsoncpp">
+      <UniqueIdentifier>{61b1e49b-fa40-4210-843a-b5948d441ed1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Public\Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RedCmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Redirect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rundll32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeExt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\BinStorage.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Conv.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\CriticalSectionEx.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\crypt.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\FirewallUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\HttpQuery.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\IPC.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MacConfig.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\NamedPipe.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Pipe.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\PipeClient.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\PipeServer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\SvchostServiceModule.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\SystemUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\WMIUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zAlloc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zBuf.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrcOpt.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zDec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zFile.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zIn.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zStream.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Alloc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bcj2.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra86.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\CpuArch.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFind.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFindMt.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Lzma2Dec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaDec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaEnc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaLib.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7Dec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Threads.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_reader.cpp">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_value.cpp">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_writer.cpp">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SafeExt.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="QuickOpen.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_internalarray.inl">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_internalmap.inl">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_valueiterator.inl">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\sconscript">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\Config.ini" />
+    <None Include="..\..\Bin\ScreenLocker.exe" />
+    <None Include="..\..\Bin\ScreenLocker_x64.exe" />
+    <None Include="..\..\Bin\ServiceUpgrade.exe" />
+    <None Include="..\tvnserver.exe" />
+    <None Include="..\Src\tvnserver.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SafeExt.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Public\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RedCmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Redirect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BinStorage.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Conv.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CriticalSectionEx.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\crypt.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FirewallUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\HttpQuery.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\IPC.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MacConfig.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\NamedPipe.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pipe.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PipeClient.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PipeServer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SvchostServiceModule.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SystemUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\WMIUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7z.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zAlloc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zBuf.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zCrc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zFile.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Alloc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Bcj2.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Bra.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\CpuArch.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzFind.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzFindMt.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzHash.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Lzma2Dec.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaDec.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaEnc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaLib.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Ppmd.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Ppmd7.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Threads.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Types.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\jsoncpp\src\json_batchallocator.h">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

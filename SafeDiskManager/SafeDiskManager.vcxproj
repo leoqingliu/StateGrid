@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CBEE2E59-108F-4D79-B0BC-47B27D21E29A}</ProjectGuid>
+    <RootNamespace>SafeDiskManager</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../Bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../Bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Public\;.;..\Public\jsoncpp\include;..\Public\Libevent\include;..\Public\libmicrohttpd\include;..\Public\libmicrohttpd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>sense4.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)MacManager.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Public\Dog\i386\Debug;..\Public\Libevent\lib\i386\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\Public\;.;..\Public\jsoncpp\include;..\Public\Libevent\include;..\Public\libmicrohttpd\include;..\Public\libmicrohttpd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Sense4ST.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)MacManager.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Public\Dog\i386\Release;..\Public\Libevent\lib\i386\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd ..\Tools &amp;&amp; Sign.bat $(TargetPath)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="AppConfig.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ChildWnd.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Communicate.cpp" />
+    <ClCompile Include="ConnectView.cpp" />
+    <ClCompile Include="ControlPanelCtrl.cpp" />
+    <ClCompile Include="CustomHeightMFCTabCtrl.cpp" />
+    <ClCompile Include="DialogAppConfig.cpp" />
+    <ClCompile Include="DialogBlackWhiteList.cpp" />
+    <ClCompile Include="DialogControl.cpp" />
+    <ClCompile Include="DialogControlDev.cpp" />
+    <ClCompile Include="DialogControlStorage.cpp" />
+    <ClCompile Include="DialogControlSystem.cpp" />
+    <ClCompile Include="DialogLock.cpp" />
+    <ClCompile Include="DialogNetwork.cpp" />
+    <ClCompile Include="DialogPolicy.cpp" />
+    <ClCompile Include="DialogProgram.cpp" />
+    <ClCompile Include="DialogProperties.cpp" />
+    <ClCompile Include="DialogRegCheck.cpp" />
+    <ClCompile Include="DialogScreen.cpp" />
+    <ClCompile Include="DialogUserAdd.cpp" />
+    <ClCompile Include="DialogUserLogin.cpp" />
+    <ClCompile Include="DialogUserManage.cpp" />
+    <ClCompile Include="DialogUserModify.cpp" />
+    <ClCompile Include="EventHttpFileServer.cpp" />
+    <ClCompile Include="EventHttpServer.cpp" />
+    <ClCompile Include="FileManCtrl.cpp" />
+    <ClCompile Include="GroupDialog.cpp" />
+    <ClCompile Include="GroupListDlg.cpp" />
+    <ClCompile Include="HostInfoView.cpp" />
+    <ClCompile Include="LoginModifyDlg.cpp" />
+    <ClCompile Include="LogWnd.cpp" />
+    <ClCompile Include="..\MacConfig.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ModifyCommentDlg.cpp" />
+    <ClCompile Include="PolicyEditDlg.cpp" />
+    <ClCompile Include="ProtoManager.cpp" />
+    <ClCompile Include="ProtoManagerChild.cpp" />
+    <ClCompile Include="SafeDiskManager.cpp" />
+    <ClCompile Include="SafeDiskManagerDoc.cpp" />
+    <ClCompile Include="SafeDiskManagerView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\StreamPacketUtils.cpp" />
+    <ClCompile Include="ThreadEx.cpp" />
+    <ClCompile Include="TopNavView.cpp" />
+    <ClCompile Include="TopTitleView.cpp" />
+    <ClCompile Include="TopWeatherView.cpp" />
+    <ClCompile Include="TransparentCheckBox.cpp" />
+    <ClCompile Include="UDiskDlg.cpp" />
+    <ClCompile Include="UpgradeDlg.cpp" />
+    <ClCompile Include="UserConfig.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="WindowDlg.cpp" />
+    <ClCompile Include="WindowListDlg.cpp" />
+    <ClCompile Include="Packet.cpp" />
+    <ClCompile Include="..\Public\BinStorage.cpp" />
+    <ClCompile Include="..\Public\Conv.cpp" />
+    <ClCompile Include="..\Public\crypt.cpp" />
+    <ClCompile Include="..\Public\Debug.cpp" />
+    <ClCompile Include="..\Public\DevUtils.cpp" />
+    <ClCompile Include="..\Public\FirewallUtils.cpp" />
+    <ClCompile Include="..\Public\GlobalUtils.cpp" />
+    <ClCompile Include="..\Public\HttpQuery.cpp" />
+    <ClCompile Include="..\Public\IdUtils.cpp" />
+    <ClCompile Include="..\Public\Utils.cpp" />
+    <ClCompile Include="..\Public\jsoncpp\src\json_reader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_value.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_writer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zAlloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zBuf.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrcOpt.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zDec.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zFile.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zIn.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zStream.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Alloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bcj2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra86.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\CpuArch.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFind.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFindMt.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Lzma2Dec.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaDec.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaEnc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaLib.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7Dec.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Threads.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\View\TreeCtrlEx.cpp" />
+    <ClCompile Include="..\Public\View\ViewEdit.cpp" />
+    <ClCompile Include="..\Public\View\ViewListCtrl.cpp" />
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridCell.cpp" />
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridCellBase.cpp" />
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridCtrl.cpp" />
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridDropTarget.cpp" />
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\InPlaceEdit.cpp" />
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\TitleTip.cpp" />
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellCheck.cpp" />
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellCombo.cpp" />
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellDateTime.cpp" />
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellNumeric.cpp" />
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridURLCell.cpp" />
+    <ClCompile Include="..\Public\libmicrohttpd\src\base64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\basicauth.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\connection.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\daemon.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\digestauth.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\internal.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\md5.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\memorypool.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\mhd_mono_clock.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\mhd_str.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\postprocessor.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\reason_phrase.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\response.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\sysfdsetsize.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\tsearch.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\platform\w32functions.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\GSoapUtils.cpp" />
+    <ClCompile Include="..\Public\gSoap\soapC.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\soapClient.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\soapServer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\stdsoap2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="AppConfig.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ChildWnd.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Communicate.h" />
+    <ClInclude Include="..\ConnConf.h" />
+    <ClInclude Include="ConnectView.h" />
+    <ClInclude Include="ControlPanelCtrl.h" />
+    <ClInclude Include="CustomHeightMFCTabCtrl.h" />
+    <ClInclude Include="..\Defines.h" />
+    <ClInclude Include="DialogAppConfig.h" />
+    <ClInclude Include="DialogBlackWhiteList.h" />
+    <ClInclude Include="DialogControl.h" />
+    <ClInclude Include="DialogControlDev.h" />
+    <ClInclude Include="DialogControlStorage.h" />
+    <ClInclude Include="DialogControlSystem.h" />
+    <ClInclude Include="DialogLock.h" />
+    <ClInclude Include="DialogNetwork.h" />
+    <ClInclude Include="DialogPolicy.h" />
+    <ClInclude Include="DialogProgram.h" />
+    <ClInclude Include="DialogProperties.h" />
+    <ClInclude Include="DialogRegCheck.h" />
+    <ClInclude Include="DialogScreen.h" />
+    <ClInclude Include="DialogUserAdd.h" />
+    <ClInclude Include="DialogUserLogin.h" />
+    <ClInclude Include="DialogUserManage.h" />
+    <ClInclude Include="DialogUserModify.h" />
+    <ClInclude Include="EventHttpFileServer.h" />
+    <ClInclude Include="EventHttpServer.h" />
+    <ClInclude Include="FileManCtrl.h" />
+    <ClInclude Include="GroupDialog.h" />
+    <ClInclude Include="GroupListDlg.h" />
+    <ClInclude Include="HostInfoView.h" />
+    <ClInclude Include="LoginModifyDlg.h" />
+    <ClInclude Include="LogWnd.h" />
+    <ClInclude Include="..\MacConfig.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ModifyCommentDlg.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="PolicyEditDlg.h" />
+    <ClInclude Include="ProtoManager.h" />
+    <ClInclude Include="ProtoManagerChild.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SafeDiskManager.h" />
+    <ClInclude Include="SafeDiskManagerDoc.h" />
+    <ClInclude Include="SafeDiskManagerView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\Public\StreamPacketUtils.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadEx.h" />
+    <ClInclude Include="TopNavView.h" />
+    <ClInclude Include="TopTitleView.h" />
+    <ClInclude Include="TopWeatherView.h" />
+    <ClInclude Include="TransparentCheckBox.h" />
+    <ClInclude Include="UDiskDlg.h" />
+    <ClInclude Include="UpgradeDlg.h" />
+    <ClInclude Include="UserConfig.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="WindowDlg.h" />
+    <ClInclude Include="WindowListDlg.h" />
+    <ClInclude Include="..\Public\BinStorage.h" />
+    <ClInclude Include="..\Public\Conv.h" />
+    <ClInclude Include="..\Public\crypt.h" />
+    <ClInclude Include="..\Public\Debug.h" />
+    <ClInclude Include="..\Public\DevUtils.h" />
+    <ClInclude Include="..\Public\FirewallUtils.h" />
+    <ClInclude Include="..\Public\GlobalUtils.h" />
+    <ClInclude Include="..\Public\HttpQuery.h" />
+    <ClInclude Include="..\Public\IdUtils.h" />
+    <ClInclude Include="..\Public\Utils.h" />
+    <ClInclude Include="..\Public\jsoncpp\src\json_batchallocator.h" />
+    <ClInclude Include="..\Public\7z\7z.h" />
+    <ClInclude Include="..\Public\7z\7zAlloc.h" />
+    <ClInclude Include="..\Public\7z\7zBuf.h" />
+    <ClInclude Include="..\Public\7z\7zCrc.h" />
+    <ClInclude Include="..\Public\7z\7zFile.h" />
+    <ClInclude Include="..\Public\7z\Alloc.h" />
+    <ClInclude Include="..\Public\7z\Bcj2.h" />
+    <ClInclude Include="..\Public\7z\Bra.h" />
+    <ClInclude Include="..\Public\7z\CpuArch.h" />
+    <ClInclude Include="..\Public\7z\LzFind.h" />
+    <ClInclude Include="..\Public\7z\LzFindMt.h" />
+    <ClInclude Include="..\Public\7z\LzHash.h" />
+    <ClInclude Include="..\Public\7z\Lzma2Dec.h" />
+    <ClInclude Include="..\Public\7z\LzmaDec.h" />
+    <ClInclude Include="..\Public\7z\LzmaEnc.h" />
+    <ClInclude Include="..\Public\7z\LzmaLib.h" />
+    <ClInclude Include="..\Public\7z\Ppmd.h" />
+    <ClInclude Include="..\Public\7z\Ppmd7.h" />
+    <ClInclude Include="..\Public\7z\Threads.h" />
+    <ClInclude Include="..\Public\7z\Types.h" />
+    <ClInclude Include="..\Public\View\TreeCtrlEx.h" />
+    <ClInclude Include="..\Public\View\ViewEdit.h" />
+    <ClInclude Include="..\Public\View\ViewListCtrl.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\CellRange.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridCell.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridCellBase.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridCtrl.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridDropTarget.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\InPlaceEdit.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\MemDC.h" />
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\TitleTip.h" />
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellCheck.h" />
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellCombo.h" />
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellDateTime.h" />
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellNumeric.h" />
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridURLCell.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\base64.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\connection.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\internal.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\md5.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\memorypool.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_byteorder.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_limits.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_mono_clock.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_str.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\response.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\sysfdsetsize.h" />
+    <ClInclude Include="..\Public\libmicrohttpd\src\tsearch.h" />
+    <ClInclude Include="..\Public\gSoap\GSoapUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap_c.bmp" />
+    <Image Include="res\blank.ico" />
+    <Image Include="res\ccsb.bmp" />
+    <Image Include="res\class_vi.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\computer_offline.bmp" />
+    <Image Include="res\computer_online.bmp" />
+    <Image Include="res\computer_online_locked.bmp" />
+    <Image Include="res\computer_online_locked.png" />
+    <Image Include="res\czxt.bmp" />
+    <Image Include="res\dksz.bmp" />
+    <Image Include="res\ERROR.ICO" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\INFO.ICO" />
+    <Image Include="res\look.ico" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\properties_hc.bmp" />
+    <Image Include="res\properties_wnd.ico" />
+    <Image Include="res\properties_wnd_hc.ico" />
+    <Image Include="res\rjsz.bmp" />
+    <Image Include="res\SafeDiskManager.ico" />
+    <Image Include="res\SafeDiskManagerDoc.ico" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\top_title.bmp" />
+    <Image Include="UserImages.bmp" />
+    <Image Include="res\WARNING.ICO" />
+    <Image Include="res\wlxw.bmp" />
+    <Image Include="res\znsb.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\look.cur" />
+    <None Include="res\SafeDiskManager.rc2" />
+    <None Include="..\Public\jsoncpp\src\json_internalarray.inl" />
+    <None Include="..\Public\jsoncpp\src\json_internalmap.inl" />
+    <None Include="..\Public\jsoncpp\src\json_valueiterator.inl" />
+    <None Include="..\Public\jsoncpp\src\sconscript" />
+    <None Include="..\Public\libmicrohttpd\src\microhttpd_dll_res.rc.in" />
+    <None Include="..\tvnviewer.exe" />
+    <None Include="..\Win.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SafeDiskManager.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Public\gSoap\ns.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SafeDiskManager.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

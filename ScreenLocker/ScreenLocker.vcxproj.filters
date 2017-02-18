@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="ResizableLib">
+      <UniqueIdentifier>{154cd712-b6f8-403e-b67f-8bd754bd613b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{3f1fd837-7989-43c4-a26b-479c3e66bc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\7z">
+      <UniqueIdentifier>{45d953d0-fcb2-4143-a08e-1795a3581313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\jsoncpp">
+      <UniqueIdentifier>{064b53b0-2dc0-46c0-a4dd-0bfb9017c1e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogTip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MacConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCDesktopAlertNoCloseWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenLocker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenLockerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UDiskLoginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableDialog.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableFormView.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableGrip.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableLayout.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableMinMax.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizablePage.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizablePageEx.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableSheet.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableSheetEx.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\ResizableState.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\ResizableLib\StdAfx.cpp">
+      <Filter>ResizableLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\CriticalSectionEx.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Debug.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\DevUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\IPC.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\NamedPipe.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\NetworkAdapterUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Pipe.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\PipeClient.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\PipeServer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\SvchostServiceModule.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\SystemUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\UDiskUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zAlloc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zBuf.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrcOpt.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zDec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zFile.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zIn.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zStream.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Alloc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bcj2.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra86.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\CpuArch.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFind.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFindMt.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Lzma2Dec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaDec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaEnc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaLib.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7Dec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Threads.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_reader.cpp">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_value.cpp">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_writer.cpp">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MacConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCDesktopAlertNoCloseWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenLocker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenLockerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UDiskLoginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableDialog.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableFormView.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableGrip.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableLayout.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableMinMax.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizablePage.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizablePageEx.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableSheet.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableSheetEx.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\ResizableState.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResizableLib\StdAfx.h">
+      <Filter>ResizableLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CriticalSectionEx.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Debug.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DevUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\IPC.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\NamedPipe.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\NetworkAdapterUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pipe.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PipeClient.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PipeServer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SvchostServiceModule.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SystemUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UDiskUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7z.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zAlloc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zBuf.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zCrc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zFile.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Alloc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Bcj2.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Bra.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\CpuArch.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzFind.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzFindMt.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzHash.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Lzma2Dec.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaDec.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaEnc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaLib.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Ppmd.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Ppmd7.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Threads.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Types.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\jsoncpp\src\json_batchallocator.h">
+      <Filter>Utils\jsoncpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ScreenLocker.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ScreenLocker.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ScreenLocker.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_internalarray.inl">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_internalmap.inl">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_valueiterator.inl">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\sconscript">
+      <Filter>Utils\jsoncpp</Filter>
+    </None>
+    <None Include="..\..\Bin\TaskKeyHook.dll" />
+    <None Include="..\..\Bin\TaskKeyHook_x64.dll" />
+    <None Include="udisk\udisk.7z" />
+    <None Include="udisk\udisk_sha1.7z" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Public\ResizableLib\Artistic-License.txt">
+      <Filter>ResizableLib</Filter>
+    </Text>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

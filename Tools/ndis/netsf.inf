@@ -1,0 +1,189 @@
+; -- NETSF.INF --
+;
+; SuperFirewallExRate driver INF file - this is the INF for the service (protocol)
+; part.
+;
+; Copyright (c) 1993-2001, Microsoft Corporation
+;
+; ----------------------------------------------------------------------
+; Notes:
+; 0. The term "filter" is used in this INF to refer to an NDIS IM driver that
+;    implements a 1:1 relationship between upper and lower bindings.
+;
+; 1. Items specifically required for a filter have been marked with
+;    "!!--Filter Specific--!!" keyword
+; 2. In general a filter DOES NOT require a notify object for proper installation.
+;    A notify object is only required if one wants to have better control
+;    over binding operations or if one wants to receive notifications
+;    when other components get installed/removed/bound/unbound.
+;    Since Windows 2000 systems do not have support for CopyINF directive,
+;    a notify object is required to programmatically copy the miniport INF  
+;    file to the system INF directory. Previous versions of this INF file
+;    erroneously used to copy the INF files directly by using the CopyFiles 
+;    directive.
+;    On Windows XP, you can install a filter IM without a notify object.
+;    by following the instructions in (4).
+;
+; 3. If you want to use this INF file with your own IM driver, please
+;    make the following modifications:
+;    File netsf.inf
+;    --------------
+;    a. In section [SourceDiskFiles] and [SuperFirewallExRate.Files.Sys]
+;       change superfirewallexrate.sys to the name of your own driver binary.
+;    b. In section [SuperFirewallExRate.ndi.AddReg], change values of
+;       BindForm and MiniportId to appropriate values.
+;    File netsf_m.inf
+;    ----------------
+;    a. Replace super_firewallexratemp with InfId of your miniport.
+;    b. In section [SuperFirewallExRateMP.AddService],
+;       change ServiceBinary appropriately.
+;    c. In section [SuperFirewallExRateMP.ndi.AddReg],
+;       change "SuperFirewallExRate" in the line having "Service"
+;       to reflect the appropriate name
+;
+;
+; ----------------------------------------------------------------------
+
+[Version]
+Signature  = "$Windows NT$"
+Class      = NetService
+ClassGUID  = {4D36E974-E325-11CE-BFC1-08002BE10318}
+Provider   = %Msft%
+DriverVer  =11/01/2015,1.1.0.0
+CatalogFile.ntx86=SuperFirewallExRateCatalogFileX86.cat
+CatalogFile.ntamd64=SuperFirewallExRateCatalogFileX64.cat
+
+[Manufacturer]
+%Msft% = MSFT,NTx86,NTia64,NTamd64
+
+[ControlFlags]
+
+;=========================================================================
+;
+;=========================================================================
+;For Win2K
+
+[MSFT]
+%SuperFirewallExRate_Desc% = SuperFirewallExRate.ndi, super_firewallexrate
+ 
+;For WinXP and later
+
+[MSFT.NTx86]
+%SuperFirewallExRate_Desc% = SuperFirewallExRate.ndi, super_firewallexrate
+
+[MSFT.NTia64]
+%SuperFirewallExRate_Desc% = SuperFirewallExRate.ndi, super_firewallexrate
+
+[MSFT.NTamd64]
+%SuperFirewallExRate_Desc% = SuperFirewallExRate.ndi, super_firewallexrate
+
+
+[SuperFirewallExRate.ndi]
+AddReg          = SuperFirewallExRate.ndi.AddReg, SuperFirewallExRate.AddReg
+Characteristics = 0x4410 ;  NCF_FILTER | NCF_NDIS_PROTOCOL !--Filter Specific--!!
+CopyFiles       = SuperFirewallExRate.Files.Sys;	, SFilter.CopyFiles.Inf
+CopyInf         = netsf_m.inf
+;Include			= netsf_m.inf
+
+[SuperFirewallExRate.ndi.Remove]
+DelFiles = SuperFirewallExRate.Files.Sys	;, SFilter.CopyFiles.Inf
+
+[SuperFirewallExRate.ndi.Services]
+AddService = SuperFirewallExRate,, SuperFirewallExRate.AddService
+
+[SuperFirewallExRate.AddService]
+DisplayName    = %SuperFirewallExRateService_Desc%
+ServiceType    = 1 ;SERVICE_KERNEL_DRIVER
+StartType      = 3 ;SERVICE_DEMAND_START
+ErrorControl   = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\superfirewallexrate.sys
+AddReg         = SuperFirewallExRate.AddService.AddReg
+
+
+[SuperFirewallExRate.AddService.AddReg]
+; ----------------------------------------------------------------------
+; Add any miniport-specific parameters here.  These are params that your
+; filter device is going to use.
+;
+;HKR, Parameters, ParameterName,  0x10000, "MultiSz", "Parameter", "Value"
+;HKR, Parameters, ParameterName2, 0x10001, 4
+
+
+; ----------------------------------------------------------------------
+; File copy
+;
+[SourceDisksNames]
+1=%DiskDescription%,"",,\i386
+2=%DiskDescription%,"",,
+
+[SourceDisksNames.x86]
+1=%DiskDescription%,,,\i386				; 32-bit
+2=%DiskDescription%,"",,
+
+[SourceDisksNames.amd64]
+1=%DiskDescription%,,,\amd64            ; x64
+2=%DiskDescription%,"",,
+
+[SourceDisksNames.ia64]
+1=%DiskDescription%,,,\ia64             ; Itanium
+2=%DiskDescription%,"",,
+
+[SourceDisksFiles]
+superfirewallexrate.sys=1
+;netsf_m.inf=2
+
+[DestinationDirs]
+DefaultDestDir = 12
+SuperFirewallExRate.Files.Sys   = 12   		; %windir%\System32\drivers
+;SFilter.CopyFiles.Inf   = 10,INF   		; %windir%\inf
+
+[SuperFirewallExRate.Files.Sys]
+superfirewallexrate.sys,,,2
+
+;[SFilter.CopyFiles.Inf]
+;netsf_m.inf,,,2
+
+; ----------------------------------------------------------------------
+; Filter Install
+;
+
+[SuperFirewallExRate.ndi.AddReg]
+HKR, Ndi, HelpText, , %SuperFirewallExRate_HELP%
+
+; ----------------------------------------------------------------------
+; !!--Filter Specific--!!
+;
+; Note:
+; 1. Other components may also have UpperRange/LowerRange but for filters
+;    the value of both of them must be noupper/nolower
+; 2. The value FilterClass is required.
+; 3. The value Service is required
+; 4. FilterDeviceInfId is the InfId of the filter device (miniport) that will
+;    be installed for each filtered adapter.
+;    In this case this is super_firewallexratemp (refer to netsf_m.inf)
+;
+HKR, Ndi,            FilterClass,         , failover
+HKR, Ndi,            FilterDeviceInfId,   , super_firewallexratemp
+HKR, Ndi,            Service,             , SuperFirewallExRate
+HKR, Ndi\Interfaces, UpperRange,          , noupper
+HKR, Ndi\Interfaces, LowerRange,          , nolower
+; HKR, Ndi\Interfaces, FilterMediaTypes,    , "ethernet, tokenring, fddi, wan"
+; HKR, Ndi\Interfaces, FilterMediaTypes,    , "ethernet, tokenring, fddi, wan, ppip, tunnel"
+; HKR, Ndi\Interfaces, FilterMediaTypes,    , "ethernet, tokenring, fddi, wan, jnprncva, jnprnvca"
+; HKR, Ndi\Interfaces, FilterMediaTypes,    , "ethernet, tokenring, fddi, wan, vmnetextension"
+
+[SuperFirewallExRate.AddReg]
+; The following key is Required
+; The following key is SuperFirewallExRate specific
+HKR, Parameters, Param1, 0, 4
+
+; ----------------------------------------------------------------------
+[Strings]
+Msft = "grabsun.com"
+DiskDescription = "grabsun.com Dashizhi NdisNet Rate Driver Disk"
+
+SuperFirewallExRate_Desc = "Dashizhi NdisNet Rate Driver"
+SuperFirewallExRate_HELP = "SuperFirewallExRate Rate Driver"
+SuperFirewallExRateService_Desc = "SuperFirewallExRate Rate Service"
+
+

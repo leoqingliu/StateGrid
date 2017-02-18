@@ -1,0 +1,968 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{e56b6941-9b82-4db6-8a99-ad602e1c6691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\json">
+      <UniqueIdentifier>{644d5351-cbbf-46dd-8fee-3d23e101cfc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\7z">
+      <UniqueIdentifier>{7aead596-e055-47eb-98b8-9a14d59462d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\View">
+      <UniqueIdentifier>{341dc06e-f55c-483b-93d0-095a3879e81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Grid">
+      <UniqueIdentifier>{5e369ffa-919d-48a6-8db3-b5a6884ce3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Grid\GridCtrl_src">
+      <UniqueIdentifier>{269ef7b8-f306-4341-a41c-93b003ae653e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Grid\GridCtrl_src\Experimental Upgrades">
+      <UniqueIdentifier>{380afaaa-1a85-4c90-bcf6-801b1d814cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Grid\NewCellTypes">
+      <UniqueIdentifier>{d559a03e-3b5c-499c-95d1-0ec82e986cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Libevent">
+      <UniqueIdentifier>{bc9500b4-1181-4f14-a51f-314452e26b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\libmicrohttpd">
+      <UniqueIdentifier>{d442a31c-c66f-47c3-8bb1-7d86416dc295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gSoap">
+      <UniqueIdentifier>{9d98ce54-7c38-4aed-80cb-ca3de57ad8d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Communicate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlPanelCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomHeightMFCTabCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogAppConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogBlackWhiteList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogControlDev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogControlStorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogControlSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogPolicy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogRegCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogUserAdd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogUserLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogUserManage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogUserModify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHttpFileServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHttpServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HostInfoView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginModifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MacConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifyCommentDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PolicyEditDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtoManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtoManagerChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeDiskManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeDiskManagerDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeDiskManagerView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\StreamPacketUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopNavView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopTitleView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopWeatherView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransparentCheckBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UDiskDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UpgradeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\BinStorage.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Conv.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\crypt.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Debug.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\DevUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\FirewallUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\GlobalUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\HttpQuery.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\IdUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_reader.cpp">
+      <Filter>Utils\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_value.cpp">
+      <Filter>Utils\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\jsoncpp\src\json_writer.cpp">
+      <Filter>Utils\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zAlloc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zBuf.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zCrcOpt.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zDec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zFile.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zIn.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\7zStream.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Alloc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bcj2.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Bra86.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\CpuArch.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFind.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzFindMt.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Lzma2Dec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaDec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaEnc.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\LzmaLib.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Ppmd7Dec.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\7z\Threads.c">
+      <Filter>Utils\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\View\TreeCtrlEx.cpp">
+      <Filter>Utils\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\View\ViewEdit.cpp">
+      <Filter>Utils\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\View\ViewListCtrl.cpp">
+      <Filter>Utils\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridCell.cpp">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridCellBase.cpp">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridCtrl.cpp">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\GridDropTarget.cpp">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\InPlaceEdit.cpp">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\GridCtrl_src\TitleTip.cpp">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellCheck.cpp">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellCombo.cpp">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellDateTime.cpp">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridCellNumeric.cpp">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Grid\NewCellTypes\GridURLCell.cpp">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\base64.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\basicauth.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\connection.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\daemon.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\digestauth.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\internal.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\md5.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\memorypool.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\mhd_mono_clock.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\mhd_str.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\postprocessor.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\reason_phrase.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\response.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\sysfdsetsize.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\tsearch.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\libmicrohttpd\src\platform\w32functions.c">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\GSoapUtils.cpp">
+      <Filter>gSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\soapC.cpp">
+      <Filter>gSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\soapClient.cpp">
+      <Filter>gSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\soapServer.cpp">
+      <Filter>gSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\gSoap\stdsoap2.cpp">
+      <Filter>gSoap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Communicate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ConnConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlPanelCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomHeightMFCTabCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogAppConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogBlackWhiteList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogControlDev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogControlStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogControlSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogNetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogPolicy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogRegCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogUserAdd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogUserLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogUserManage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogUserModify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHttpFileServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHttpServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HostInfoView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginModifyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MacConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifyCommentDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PolicyEditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtoManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtoManagerChild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeDiskManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeDiskManagerDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeDiskManagerView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\StreamPacketUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TopNavView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TopTitleView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TopWeatherView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransparentCheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UDiskDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UpgradeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BinStorage.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Conv.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\crypt.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Debug.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DevUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FirewallUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GlobalUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\HttpQuery.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\IdUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\jsoncpp\src\json_batchallocator.h">
+      <Filter>Utils\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7z.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zAlloc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zBuf.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zCrc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\7zFile.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Alloc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Bcj2.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Bra.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\CpuArch.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzFind.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzFindMt.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzHash.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Lzma2Dec.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaDec.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaEnc.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\LzmaLib.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Ppmd.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Ppmd7.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Threads.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\7z\Types.h">
+      <Filter>Utils\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\View\TreeCtrlEx.h">
+      <Filter>Utils\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\View\ViewEdit.h">
+      <Filter>Utils\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\View\ViewListCtrl.h">
+      <Filter>Utils\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\CellRange.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridCell.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridCellBase.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridCtrl.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\GridDropTarget.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\InPlaceEdit.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\MemDC.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\GridCtrl_src\TitleTip.h">
+      <Filter>Utils\Grid\GridCtrl_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellCheck.h">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellCombo.h">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellDateTime.h">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridCellNumeric.h">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Grid\NewCellTypes\GridURLCell.h">
+      <Filter>Utils\Grid\NewCellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\base64.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\connection.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\internal.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\md5.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\memorypool.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_byteorder.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_limits.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_mono_clock.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\mhd_str.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\response.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\sysfdsetsize.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\libmicrohttpd\src\tsearch.h">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\gSoap\GSoapUtils.h">
+      <Filter>gSoap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap_c.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\blank.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ccsb.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\class_vi.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\class_view.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\class_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\classview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\computer_offline.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\computer_online.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\computer_online_locked.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\computer_online_locked.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\czxt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dksz.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ERROR.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_view.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fileview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fileview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\INFO.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\look.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\rjsz.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SafeDiskManager.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SafeDiskManagerDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\top_title.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WARNING.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\wlxw.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\znsb.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\look.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SafeDiskManager.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_internalarray.inl">
+      <Filter>Utils\json</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_internalmap.inl">
+      <Filter>Utils\json</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\json_valueiterator.inl">
+      <Filter>Utils\json</Filter>
+    </None>
+    <None Include="..\Public\jsoncpp\src\sconscript">
+      <Filter>Utils\json</Filter>
+    </None>
+    <None Include="..\Public\libmicrohttpd\src\microhttpd_dll_res.rc.in">
+      <Filter>Utils\libmicrohttpd</Filter>
+    </None>
+    <None Include="..\tvnviewer.exe" />
+    <None Include="..\Win.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SafeDiskManager.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Public\gSoap\ns.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

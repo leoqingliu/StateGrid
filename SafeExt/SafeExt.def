@@ -1,0 +1,20 @@
+; SafeExt.def : Declares the module parameters.
+
+LIBRARY      "CommuExt.DLL"
+
+EXPORTS
+	;DllCanUnloadNow     @1 PRIVATE
+	;DllGetClassObject   @2 PRIVATE
+	;DllRegisterServer   @3 PRIVATE
+	;DllUnregisterServer	@4 PRIVATE
+	
+	ServiceMain
+	InstallService
+	UnInstallService
+	RunDll_Install
+	RunDll_UnInstall
+	CaptureScreen
+	ExtractLockScreen
+	;LockScreen
+	;UnLockScreen
+	;UpdateInfo

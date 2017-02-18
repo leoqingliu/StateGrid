@@ -1,0 +1,1451 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\SafeDiskManager.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxprint.rc""                // 打印/打印预览资源\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SafeDiskManager.ico"
+IDR_SafeDiskManagerTYPE ICON                    "res\\SafeDiskManagerDoc.ico"
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+IDI_ICON_ERROR          ICON                    "res\\ERROR.ICO"
+IDI_ICON_INFO           ICON                    "res\\INFO.ICO"
+IDI_LOOK_ICON           ICON                    "res\\look.ico"
+IDI_BLANK_ICON          ICON                    "res\\blank.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+IDB_CONNECT_VIEW        BITMAP                  "res\\class_vi.bmp"
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+IDB_BITMAP_TOPTITLE     BITMAP                  "res\\top_title.bmp"
+IDB_BITMAP_ZNSB         BITMAP                  "res\\znsb.bmp"
+IDB_BITMAP_WLXW         BITMAP                  "res\\wlxw.bmp"
+IDB_BITMAP_RJSZ         BITMAP                  "res\\rjsz.bmp"
+IDB_BITMAP_DKSZ         BITMAP                  "res\\dksz.bmp"
+IDB_BITMAP_CZXT         BITMAP                  "res\\czxt.bmp"
+IDB_BITMAP_CCSB         BITMAP                  "res\\ccsb.bmp"
+IDB_BITMAP_COMPUTER_ONLINE BITMAP                  "res\\computer_online.bmp"
+IDB_BITMAP_COMPUTER_OFFLINE BITMAP                  "res\\computer_offline.bmp"
+IDB_BITMAP_COMPUTER_ONLINE_LOCKED BITMAP                  "res\\computer_online_locked.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_SORT TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "设置(&S)",                      ID_APP_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "修改密码",                        ID_APP_USER_MODIFY
+        MENUITEM "用户管理",                        ID_APP_USER_MANAGE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        MENUITEM "默认允许所有时间可用",                  ID_VIEW_DEFAULT_ALLOW
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 SafeDiskManager(&A)...",   ID_APP_ABOUT
+    END
+END
+
+IDR_SafeDiskManagerTYPE MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "设置(&S)",                      ID_APP_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "修改密码",                        ID_APP_USER_MODIFY
+        MENUITEM "用户管理",                        ID_APP_USER_MANAGE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        MENUITEM "默认允许所有时间可用",                  ID_VIEW_DEFAULT_ALLOW
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 SafeDiskManager(&A)...",   ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU 
+BEGIN
+    POPUP "排序"
+    BEGIN
+        MENUITEM "按字母顺序排序(&S)",                 ID_SORTING_SORTALPHABETIC
+        MENUITEM "按类型排序(&T)",                   ID_SORTING_SORTBYTYPE
+        MENUITEM "按访问排序(&E)",                   ID_SORTING_SORTBYACCESS
+        MENUITEM "按类型分组(&Y)",                   ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU 
+BEGIN
+    POPUP "资源管理器"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "添加授权",                        ID_POLICY
+        MENUITEM "授权列表",                        ID_POLICY_EDIT
+        MENUITEM "修改备注",                        ID_COMMENT
+        MENUITEM "属性(&P)...",                   ID_PROPERTIES, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "创建分组",                        ID_GROUP_CREATE
+        MENUITEM "编辑分组",                        ID_GROUP_EDIT
+        MENUITEM "删除分组",                        ID_GROUP_DEL
+        MENUITEM "添加到分组",                       ID_GROUP_ADDTO
+        MENUITEM SEPARATOR
+        MENUITEM "远程开机",                        ID_REMOTE_OPEN
+        MENUITEM "批量锁屏",                        ID_BATCH_LOCK
+        MENUITEM "批量解锁",                        ID_BATCH_UNLOCK
+        MENUITEM "批量自动模式",                      ID_BATCH_AUTO
+        MENUITEM SEPARATOR
+        MENUITEM "批量升级",                        ID_BATCH_UPGRADE
+    END
+END
+
+IDR_OUTPUT_POPUP MENU 
+BEGIN
+    POPUP "弹出项"
+    BEGIN
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "清除(&C)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏(&H)",                      ID_VIEW_OUTPUTWND
+        MENUITEM "Top",                         ID_VIEW_TOPWND
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_MENU_CHILD MENU 
+BEGIN
+    POPUP "Child"
+    BEGIN
+        MENUITEM "下载",                          ID_CHILD_DOWNLOAD
+        MENUITEM "上传",                          ID_CHILD_UPLOAD
+        MENUITEM SEPARATOR
+        MENUITEM "刷新(&U)",                      ID_CHILD_REFRESH
+    END
+END
+
+IDR_MENU_CHILD_TAB MENU 
+BEGIN
+    POPUP "Child"
+    BEGIN
+        MENUITEM "关闭此窗口(&X)",                   ID_CHILD_CLOSE
+    END
+END
+
+IDR_MENU_CHILD_WND MENU 
+BEGIN
+    POPUP "Child"
+    BEGIN
+        MENUITEM "保存(&S)",                      ID_CHILD_SAVE
+        MENUITEM "刷新(&U)",                      ID_CHILD_UPDATE
+        MENUITEM "关闭进程(&K)",                    ID_CHILD_KILL_PROCESS
+    END
+END
+
+IDR_MENU_POPUP_HOSTINFO MENU 
+BEGIN
+    POPUP "Host"
+    BEGIN
+        MENUITEM "刷新",                          ID_HOST_REFRESH
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 State Grid Lan Manager"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "State Grid Lan Manager\nVersion: 2.0",IDC_STATIC,42,14,114,19,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,51,114,8
+    DEFPUSHBUTTON   "确定",IDOK,114,65,50,14,WS_GROUP
+    LTEXT           "",IDC_STATIC_LIMIT,43,39,121,8
+END
+
+IDD_DIALOG_APP_CONFIG DIALOGEX 0, 0, 233, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,122,136,50,14
+    PUSHBUTTON      "取消",IDCANCEL,176,136,50,14
+    LTEXT           "主机名",IDC_STATIC,7,9,25,8
+    EDITTEXT        IDC_EDIT_HOST,50,7,176,14,ES_AUTOHSCROLL
+    LTEXT           "端口",IDC_STATIC,7,28,17,8
+    EDITTEXT        IDC_EDIT_PORT,50,26,176,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "密钥",IDC_STATIC,7,49,17,8
+    EDITTEXT        IDC_EDIT_KEY,50,46,176,14,ES_AUTOHSCROLL
+    LTEXT           "页面",IDC_STATIC,7,70,17,8
+    EDITTEXT        IDC_EDIT_PAGE,50,67,176,14,ES_AUTOHSCROLL
+    LTEXT           "在线超时",IDC_STATIC,7,92,33,8,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_TIMEOUT,50,89,176,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "本地路径",IDC_STATIC,7,115,33,8
+    EDITTEXT        IDC_EDIT_LOCAL_DIR,50,112,176,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "重注册",IDC_BUTTON_REREG,50,136,50,14
+END
+
+IDD_DIALOG_SCREEN DIALOGEX 0, 0, 405, 83
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "手动截屏",IDC_BUTTON_SCREEN,7,7,50,14
+    PUSHBUTTON      "打开",IDC_BUTTON_OPEN,7,27,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "实时屏幕查看",IDC_BUTTON_VNC_VIEW,200,7,70,14
+    PUSHBUTTON      "实时屏幕控制",IDC_BUTTON_VNC_CONTROL,282,7,70,14
+    LTEXT           "每隔",IDC_STATIC,63,9,17,8
+    EDITTEXT        IDC_EDIT_AUTO_TIME,86,7,15,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "分钟截屏一次",IDC_STATIC,107,9,49,8
+    PUSHBUTTON      "设置",IDC_BUTTON_SCREEN_AUTO,159,7,29,14
+END
+
+IDD_DIALOG_PROPERTIES DIALOGEX 0, 0, 267, 192
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "对外IP",IDC_STATIC,7,30,24,8
+    LTEXT           "对内IP",IDC_STATIC,7,50,24,8
+    LTEXT           "内网/外网用户",IDC_STATIC,7,70,52,8
+    LTEXT           "上次登录时间",IDC_STATIC,7,90,49,8
+    LTEXT           "机器名",IDC_STATIC,7,110,25,8
+    LTEXT           "ID",IDC_STATIC,7,10,8,8
+    LTEXT           "Static",IDC_STATIC_ID,80,10,180,8
+    LTEXT           "Static",IDC_STATIC_IP_OUT,80,27,180,8
+    LTEXT           "Static",IDC_STATIC_IP_IN,80,46,180,8
+    LTEXT           "Static",IDC_STATIC_USER_IN,80,66,180,8
+    LTEXT           "Static",IDC_STATIC_LAST_LOGIN,80,90,180,8
+    LTEXT           "Static",IDC_STATIC_HOSTNAME,80,111,180,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,68,7,1,155
+    LTEXT           "硬盘序列号",IDC_STATIC,7,130,41,8
+    LTEXT           "Static",IDC_STATIC_DEVICE_SERIAL,80,131,180,8
+    LTEXT           "备注",IDC_STATIC,7,150,17,8
+    LTEXT           "Static",IDC_STATIC_COMMENT,80,152,180,8
+    DEFPUSHBUTTON   "确定",IDOK,210,171,50,14
+END
+
+IDD_DIALOG_CONTROL DIALOGEX 0, 0, 316, 83
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "远程重启",IDC_BUTTON_RESTART,7,7,55,14
+    PUSHBUTTON      "远程关机",IDC_BUTTON_SHUTDOWN,70,7,55,14
+    PUSHBUTTON      "远程注销",IDC_BUTTON_LOGOFF,133,7,55,14
+END
+
+IDD_DIALOG_POLICY DIALOGEX 0, 0, 267, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER,77,7,183,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPANY,77,26,183,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUMBER,77,46,183,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ID,77,65,183,14,ES_AUTOHSCROLL
+    LTEXT           "用户名",-1,7,7,25,8
+    LTEXT           "单位名称",-1,7,28,33,8
+    LTEXT           "手机号",-1,7,47,25,8
+    LTEXT           "身份证号",-1,7,68,33,8
+    CONTROL         "",IDC_DATETIMEPICKER_START,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,194,87,66,15
+    CONTROL         "",IDC_DATETIMEPICKER_END,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,194,110,66,15
+    LTEXT           "开始时间",-1,7,94,33,8
+    LTEXT           "截止时间",-1,7,113,33,8
+    DEFPUSHBUTTON   "保存",IDOK,210,132,50,14
+    CONTROL         "",IDC_DATETIMEPICKER_START_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,77,87,101,15
+    CONTROL         "",IDC_DATETIMEPICKER_END_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,77,110,101,15
+END
+
+IDD_DIALOG_LOCK DIALOGEX 0, 0, 498, 115
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "人工锁屏",IDC_BUTTON_LOCK,7,7,55,14
+    PUSHBUTTON      "人工解锁",IDC_BUTTON_UNLOCK,70,7,55,14
+    PUSHBUTTON      "自动按照授权进行锁屏解锁",IDC_BUTTON_LOCK_AUTO,179,7,129,14
+    LTEXT           "解锁密码",IDC_STATIC,7,36,33,8
+    EDITTEXT        IDC_EDIT_PASSWORD,51,33,72,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_BUTTON_SET_PASSWORD,129,33,50,14
+    LTEXT           "超时时间",IDC_STATIC,7,57,33,8
+    EDITTEXT        IDC_EDIT_IDLE_TIME,51,54,72,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_BLACKWHITE_LIST DIALOGEX 0, 0, 418, 197
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,185,176,50,14
+    CONTROL         "",IDC_LIST_WIN,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,196,147
+    PUSHBUTTON      "添加",IDC_BUTTON_WIN_ADD,48,176,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_WIN_DEL,102,176,50,14
+    CONTROL         "",IDC_LIST_WHITE_WIN,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,215,21,196,147
+    PUSHBUTTON      "添加",IDC_BUTTON_WHITE_WIN_ADD,270,176,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_WHITE_WIN_DEL,324,176,50,14
+    CONTROL         "禁止黑名单程序运行",IDC_RADIO_LIST,"Button",BS_AUTORADIOBUTTON,7,7,88,10
+    CONTROL         "只让白名单程序运行",IDC_RADIO_WHITE_LIST,"Button",BS_AUTORADIOBUTTON,215,7,88,10
+END
+
+IDD_DIALOG_REG_CHECK DIALOGEX 0, 0, 320, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_KEY,39,27,274,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOST_KEY,39,7,274,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "确定",IDOK,208,47,50,14
+    PUSHBUTTON      "取消",IDCANCEL,263,47,50,14
+    LTEXT           "机器码",IDC_STATIC,7,9,25,8
+    LTEXT           "注册码",IDC_STATIC,7,30,25,8
+END
+
+IDD_DIALOG_USER_ADD DIALOGEX 0, 0, 214, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER,62,7,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,62,25,145,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD2,62,45,145,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,103,73,50,14
+    PUSHBUTTON      "取消",IDCANCEL,157,73,50,14
+    LTEXT           "密码",IDC_STATIC,7,28,17,8
+    LTEXT           "用户名",IDC_STATIC,7,10,25,8
+    LTEXT           "再次输入密码",IDC_STATIC,7,48,49,8
+END
+
+IDD_DIALOG_USER_MODIFY DIALOGEX 0, 0, 214, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PASSWORD,62,7,145,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD2,62,26,145,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,103,55,50,14
+    PUSHBUTTON      "取消",IDCANCEL,157,55,50,14
+    LTEXT           "密码",-1,7,10,17,8
+    LTEXT           "再次输入密码",-1,7,30,49,8
+END
+
+IDD_DIALOG_USER_LOGIN DIALOGEX 0, 0, 214, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER,62,7,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,62,25,145,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,103,45,50,14
+    PUSHBUTTON      "取消",IDCANCEL,157,45,50,14
+    LTEXT           "密码",-1,7,28,17,8
+    LTEXT           "用户名",-1,7,10,25,8
+END
+
+IDD_DIALOG_USER_MANAGE DIALOGEX 0, 0, 282, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_USER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,21,206,161
+    LTEXT           "用户",IDC_STATIC,7,7,17,8
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,225,150,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,225,169,50,14
+END
+
+IDD_URL_DIALOG DIALOGEX 0, 0, 371, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "网页"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,357,170
+    LTEXT           "输入网址:",IDC_STATIC,7,188,36,8
+    EDITTEXT        IDC_EDIT_URL,55,188,246,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",1060,314,188,50,14
+    PUSHBUTTON      "删除",1061,314,208,50,14
+    PUSHBUTTON      "导入网址",IDC_BUTTON_IMPORT,7,241,50,14
+    PUSHBUTTON      "清空网址",IDC_BUTTON_CLEAN,126,241,50,14
+    PUSHBUTTON      "导出网址",IDC_BUTTON_EXPORT,68,241,50,14
+    PUSHBUTTON      "保存",IDOK,314,241,50,14
+    CONTROL         "自动添加http://",IDC_CHECK_ADD_HTTP,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,56,210,135,10
+END
+
+IDD_UDISK_LOGIN_DIALOG DIALOGEX 0, 0, 235, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "登录"
+FONT 9, "微软雅黑", 400, 0, 0x0
+BEGIN
+    EDITTEXT        1000,33,7,196,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定(&O)",IDC_BTN_OK,122,25,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,178,25,50,14
+    LTEXT           "密码",-1,7,9,21,8
+END
+
+IDD_UDISK_DIALOG DIALOGEX 0, 0, 466, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "USB存储设备"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,22,209,170
+    LTEXT           "输入ID",IDC_STATIC,7,205,24,8
+    EDITTEXT        IDC_EDIT_URL,38,203,165,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,207,203,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,299,203,50,14
+    PUSHBUTTON      "保存",IDOK,409,225,50,14
+    CONTROL         "",IDC_LIST_AUTH,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,250,22,209,170
+    PUSHBUTTON      ">",IDC_BUTTON_MOVE_WHITE,223,98,19,24
+    LTEXT           "当前插入的USB存储设备",IDC_STATIC,7,7,86,8
+    LTEXT           "已许可USB存储设备",IDC_STATIC,249,7,70,8
+    PUSHBUTTON      "导入",IDC_BUTTON_INPORT,353,203,50,14
+    PUSHBUTTON      "导出",IDC_BUTTON_EXPORT,409,203,50,14
+END
+
+IDD_WINDOW_RULE_DIALOG DIALOGEX 0, 0, 432, 209
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "规则"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,418,170
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,247,188,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,302,188,50,14
+    PUSHBUTTON      "导入",IDC_BUTTON_IMPORT,7,188,50,14
+    PUSHBUTTON      "导出",IDC_BUTTON_EXPORT,65,188,50,14
+    PUSHBUTTON      "清空",IDC_BUTTON_CLEAN,123,188,50,14
+    PUSHBUTTON      "保存",IDOK,375,188,50,14
+END
+
+IDD_USBMANAGER_DIALOG DIALOGEX 0, 0, 591, 336
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "UsbManager"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    CONTROL         "禁止USB存储设备(如U盘、移动硬盘，允许使用USB鼠标、键盘和加密狗)",IDC_RADIO_UDISK_DISABLE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,17,23,268,10
+    CONTROL         "只允许特定USB存储设备使用(如U盘、移动硬盘)",IDC_RADIO_UDISK_SPEC,"Button",BS_AUTORADIOBUTTON,17,38,188,10
+    CONTROL         "只允许从U盘向电脑拷贝资料，禁止从电脑向U盘拷贝资料",IDC_RADIO_UDISK_WRITEPROTECT,
+                    "Button",BS_AUTORADIOBUTTON,17,53,235,10
+    CONTROL         "允许从电脑向U盘拷贝资料，禁止U盘向电脑拷贝资料",IDC_RADIO_UDISK_COPYTOCOMPUTER,
+                    "Button",BS_AUTORADIOBUTTON,17,68,189,10
+    CONTROL         "可以从电脑向U盘拷贝资料，但必须输入管理员密码",IDC_RADIO_UDISK_PASSWD,"Button",BS_AUTORADIOBUTTON,17,83,200,10
+    CONTROL         "恢复USB存储设备、手机或蓝牙等设备的使用(可手动点击恢复设备)",IDC_RADIO_UDISK_ENABLE,
+                    "Button",BS_AUTORADIOBUTTON,17,98,254,10
+    CONTROL         "禁用CD/DVD光驱",IDC_CHECK_CD_DVD,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,17,112,78,10
+    GROUPBOX        "",IDC_STATIC_STORAGE,7,16,283,113
+    GROUPBOX        "",IDC_STATIC,299,74,285,129
+    CONTROL         "禁用注册表",IDC_CHECK_REGEDIT,"Button",BS_OWNERDRAW | WS_TABSTOP,310,84,56,10
+    CONTROL         "禁用设备管理器",IDC_CHECK_DEVMGR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,395,84,72,10
+    CONTROL         "禁用组策略",IDC_CHECK_GPEDIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,496,84,56,10
+    CONTROL         "禁用安全模式",IDC_CHECK_SAFEMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,114,64,10
+    CONTROL         "禁用任务管理器",IDC_CHECK_TASKMGR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,395,99,72,10
+    CONTROL         "禁用Msconfig",IDC_CHECK_MSCONFIG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,496,99,60,10
+    CONTROL         "禁用计算机管理",IDC_CHECK_COMPUTERMGR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,99,72,10
+    CONTROL         "禁用格式化和Ghost",IDC_CHECK_FORMAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,395,129,83,10
+    CONTROL         "禁用DOS命令",IDC_CHECK_DOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,129,62,10
+    CONTROL         "禁用光盘启动电脑(x)",IDC_CHECK_CD_BOOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,395,114,89,10
+    CONTROL         "禁用U盘启动电脑(x)",IDC_CHECK_U_BOOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,496,114,86,10
+    CONTROL         "禁用局域网通讯",IDC_CHECK_LAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,395,174,72,10
+    CONTROL         "屏蔽PrtScn键",IDC_CHECK_KEY_PRTSCN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,144,61,10
+    CONTROL         "屏蔽Esc键",IDC_CHECK_KEY_ESC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,395,144,70,10
+    CONTROL         "屏蔽Win键",IDC_CHECK_KEY_WIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,159,55,10
+    CONTROL         "屏蔽Ctrl+Alt+A键",IDC_CHECK_KEY_CTRLALTA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,395,159,72,10
+    CONTROL         "屏蔽剪贴板",IDC_CHECK_CLIPBOARD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,496,144,56,10
+    CONTROL         "禁止刻录但允许光驱使用",IDC_CHECK_CD_BURN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,112,95,10
+    CONTROL         "禁止软驱",IDC_CHECK_FLOPPY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,234,112,48,10
+    GROUPBOX        "",IDC_STATIC,299,217,285,92
+    CONTROL         "唤出界面热键Alt+F2",IDC_CHECK_HOTKEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,231,82,10
+    PUSHBUTTON      "修改热键",IDC_BUTTON_MODIFY_HOTKEY,397,229,50,14
+    CONTROL         "开机自动启动",IDC_CHECK_AUTO_RUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,271,64,10
+    CONTROL         "软件拦截日志",IDC_CHECK_USB_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,397,271,61,10
+    PUSHBUTTON      "卸载软件",IDC_BUTTON_UNINSTALL,299,315,50,14
+    PUSHBUTTON      "后台运行",IDC_BUTTON_HIDE,534,315,50,14
+    PUSHBUTTON      "退出软件",IDC_BUTTON_EXIT,355,315,50,14
+    PUSHBUTTON      "+/-",IDC_BUTTON_CD_BURN_OP,193,111,23,11
+    PUSHBUTTON      "添加特定U盘",IDC_BUTTON_ADD_U_ID,217,36,63,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UDISK_PASSWD,230,80,50,14
+    PUSHBUTTON      "查询日志",IDC_BUTTON_USB_LOG,471,269,50,14
+    GROUPBOX        "",IDC_STATIC,7,142,283,132
+    CONTROL         "禁用发邮件",IDC_CHECK_MAIL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,152,56,10
+    CONTROL         "禁用网盘",IDC_CHECK_DISK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,167,48,10
+    CONTROL         "禁止访问论坛",IDC_CHECK_BLOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,152,64,10
+    CONTROL         "禁用FTP",IDC_CHECK_FTP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,182,44,10
+    CONTROL         "禁用QQ传送文件",IDC_CHECK_QQ_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,212,75,10
+    CONTROL         "禁用QQ群上传文件",IDC_CHECK_QQ_GROUP_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,227,83,10
+    CONTROL         "只允许特定QQ登录",IDC_CHECK_QQ_SPEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,242,83,10
+    CONTROL         "只允许特定旺旺登录",IDC_CHECK_WANGWANG_SPEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,257,88,10
+    CONTROL         "禁止手机电脑文件互传",IDC_CHECK_FILE_TRANS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,167,96,10
+    CONTROL         "禁止一切聊天软件",IDC_CHECK_CHAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,182,80,10
+    CONTROL         "禁止打开的程序",IDC_CHECK_PROCESS_BLACKLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,197,72,10
+    CONTROL         "禁止打开的网页",IDC_CHECK_URL_BLACKLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,212,72,10
+    CONTROL         "只允许打开的程序",IDC_CHECK_PROCESS_WHITELIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,227,80,10
+    CONTROL         "只允许打开的网页",IDC_CHECK_URL_WHITELIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,242,80,10
+    PUSHBUTTON      "+/-",IDC_BUTTON_MAIL_OP,81,152,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_DISK_OP,81,166,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_FTP_OP,81,182,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_CHAT_OP,239,181,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_PROCESS_BLACKLIST_OP,239,196,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_URL_BLACKLIST_OP,239,211,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_PROCESS_WHITELIST_OP,239,226,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_URL_WHITELIST_OP,239,242,23,11
+    GROUPBOX        "",IDC_STATIC,7,287,283,42
+    CONTROL         "禁用手机、PDA等便携式设备",IDC_CHECK_DEVICE_CELL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,297,117,10
+    CONTROL         "禁用手机助手",IDC_CHECK_PHONE_ASSIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,297,64,10
+    CONTROL         "禁用有线网卡",IDC_CHECK_NETWORK_WIRED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,312,60,10
+    CONTROL         "禁用无线网卡",IDC_CHECK_NETWORK_WIRELESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,312,59,10
+    CONTROL         "禁用随身WiFi",IDC_CHECK_NETWORK_MINI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,312,57,10
+    PUSHBUTTON      "+/-",IDC_BUTTON_PHONE_ASSIST_OP,209,296,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_NETWORK_MINI,258,311,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_NETWORK_WIRED,79,311,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_NETWORK_WIRELESS,169,311,23,11
+    GROUPBOX        "",IDC_STATIC,299,16,285,40
+    CONTROL         "禁用蓝牙",IDC_CHECK_BLUETOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,24,48,10
+    CONTROL         "禁用串口/并口(x)",IDC_CHECK_SERIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,394,24,76,10
+    CONTROL         "禁用1394",IDC_CHECK_1394,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,490,24,48,10
+    CONTROL         "禁用红外",IDC_CHECK_IRDA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,39,48,10
+    CONTROL         "禁用PCMCIA(x)",IDC_CHECK_PCMCIA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,394,39,67,10
+    CONTROL         "禁用调制解调器",IDC_CHECK_MODEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,490,39,72,10
+    CONTROL         "禁用HTTPS/SSL通信",IDC_CHECK_SSL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,197,89,10
+    CONTROL         "禁止网络共享",IDC_CHECK_SHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,174,80,10
+    PUSHBUTTON      "+/-",IDC_BUTTON_BLOG_OP,239,151,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_LAN,468,173,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_QQ_SPEC,114,242,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_WANGWANG_SPEC,114,256,23,11
+    CONTROL         "禁用修改IP/Mac",IDC_CHECK_IP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,496,129,72,10
+    CONTROL         "禁用Telnet",IDC_CHECK_TELNET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,496,159,52,10
+    CONTROL         "禁用虚拟机",IDC_CHECK_VIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,496,174,56,10
+    CONTROL         150,IDC_STATIC_CCSB,"Static",SS_BITMAP,7,7,9,8
+    CONTROL         152,IDC_STATIC_DKSZ,"Static",SS_BITMAP,299,7,9,8
+    CONTROL         154,IDC_STATIC_WLXW,"Static",SS_BITMAP,7,132,9,8
+    CONTROL         151,IDC_STATIC_CZXT,"Static",SS_BITMAP,299,66,9,8
+    CONTROL         155,IDC_STATIC_ZNSB,"Static",SS_BITMAP,7,278,9,8
+    CONTROL         153,IDC_STATIC_RJSZ,"Static",SS_BITMAP,300,207,9,8
+    LTEXT           "存储设备控制",IDC_STATIC,21,7,42,8
+    LTEXT           "端口控制",IDC_STATIC,314,7,28,8
+    LTEXT           "网络行为控制",IDC_STATIC,22,132,42,8
+    LTEXT           "操作系统控制",IDC_STATIC,314,66,42,8
+    LTEXT           "智能设备控制",IDC_STATIC,22,278,42,8
+    LTEXT           "设置",IDC_STATIC,314,207,15,8
+    PUSHBUTTON      "登录用户设置",IDC_BUTTON_MAN_USER,471,229,50,14
+    CONTROL         "隐藏运行(默认热键: Alt+F2)",IDC_CHECK_START_HIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,397,250,101,10
+    CONTROL         "默认使用上次账号登录",IDC_CHECK_AUTO_LOGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,250,85,10
+    CONTROL         "",IDC_IPADDRESS_START,"SysIPAddress32",WS_TABSTOP,308,288,100,15
+    CONTROL         "",IDC_IPADDRESS_END,"SysIPAddress32",WS_TABSTOP,424,288,100,15
+    LTEXT           "~",IDC_STATIC,412,291,8,8
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE_IP,533,288,37,14
+    CONTROL         "禁止创建用户",IDC_CHECK_CREATEUSER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,310,189,80,10
+END
+
+IDD_CONTROL_SYSTEM_DIALOG DIALOGEX 0, 0, 356, 151
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,15,285,129
+    CONTROL         "禁用注册表",IDC_CHECK_REGEDIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,25,56,10
+    CONTROL         "禁用设备管理器",IDC_CHECK_DEVMGR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,25,72,10
+    CONTROL         "禁用组策略",IDC_CHECK_GPEDIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,25,56,10
+    CONTROL         "禁用安全模式",IDC_CHECK_SAFEMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,55,64,10
+    CONTROL         "禁用任务管理器",IDC_CHECK_TASKMGR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,40,72,10
+    CONTROL         "禁用Msconfig",IDC_CHECK_MSCONFIG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,40,60,10
+    CONTROL         "禁用计算机管理",IDC_CHECK_COMPUTERMGR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,40,72,10
+    CONTROL         "禁用格式化和Ghost",IDC_CHECK_FORMAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,70,83,10
+    CONTROL         "禁用DOS命令",IDC_CHECK_DOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,70,62,10
+    CONTROL         "禁用光盘启动电脑(x)",IDC_CHECK_CD_BOOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,55,89,10
+    CONTROL         "禁用U盘启动电脑(x)",IDC_CHECK_U_BOOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,55,86,10
+    CONTROL         "禁用局域网通讯",IDC_CHECK_LAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,115,72,10
+    CONTROL         "屏蔽PrtScn键",IDC_CHECK_KEY_PRTSCN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,85,61,10
+    CONTROL         "屏蔽Esc键",IDC_CHECK_KEY_ESC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,85,70,10
+    CONTROL         "屏蔽Win键",IDC_CHECK_KEY_WIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,100,55,10
+    CONTROL         "屏蔽Ctrl+Alt+A键",IDC_CHECK_KEY_CTRLALTA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,100,72,10
+    CONTROL         "屏蔽剪贴板",IDC_CHECK_CLIPBOARD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,85,56,10
+    CONTROL         "禁止网络共享",IDC_CHECK_SHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,115,80,10
+    PUSHBUTTON      "+/-",IDC_BUTTON_LAN,176,114,23,11
+    CONTROL         "禁用修改IP/Mac",IDC_CHECK_IP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,70,72,10
+    CONTROL         "禁用Telnet",IDC_CHECK_TELNET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,100,52,10
+    CONTROL         "禁用虚拟机",IDC_CHECK_VIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,115,56,10
+    CONTROL         151,IDC_STATIC_CZXT,"Static",SS_BITMAP,7,7,9,8
+    LTEXT           "操作系统控制",IDC_STATIC,22,7,42,8
+    CONTROL         "禁止创建用户",IDC_CHECK_CREATEUSER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,130,80,10
+    PUSHBUTTON      "保存",IDC_BUTTON_SYSTEM_SAVE,299,130,50,14
+END
+
+IDD_CONTROL_STORAGE_DIALOG DIALOGEX 0, 0, 353, 136
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    CONTROL         "禁止USB存储设备(如U盘、移动硬盘，允许使用USB鼠标、键盘和加密狗)",IDC_RADIO_UDISK_DISABLE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,17,23,268,10
+    CONTROL         "只允许特定USB存储设备使用(如U盘、移动硬盘)",IDC_RADIO_UDISK_SPEC,"Button",BS_AUTORADIOBUTTON,17,38,188,10
+    CONTROL         "只允许从U盘向电脑拷贝资料，禁止从电脑向U盘拷贝资料",IDC_RADIO_UDISK_WRITEPROTECT,
+                    "Button",BS_AUTORADIOBUTTON,17,53,235,10
+    CONTROL         "允许从电脑向U盘拷贝资料，禁止U盘向电脑拷贝资料",IDC_RADIO_UDISK_COPYTOCOMPUTER,
+                    "Button",BS_AUTORADIOBUTTON,17,68,189,10
+    CONTROL         "可以从电脑向U盘拷贝资料，但必须输入管理员密码",IDC_RADIO_UDISK_PASSWD,"Button",BS_AUTORADIOBUTTON,17,83,200,10
+    CONTROL         "恢复USB存储设备、手机或蓝牙等设备的使用(可手动点击恢复设备)",IDC_RADIO_UDISK_ENABLE,
+                    "Button",BS_AUTORADIOBUTTON,17,98,254,10
+    CONTROL         "禁用CD/DVD光驱",IDC_CHECK_CD_DVD,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,17,112,78,10
+    GROUPBOX        "",IDC_STATIC_STORAGE,7,16,283,113
+    CONTROL         "禁止刻录但允许光驱使用",IDC_CHECK_CD_BURN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,112,95,10
+    CONTROL         "禁止软驱",IDC_CHECK_FLOPPY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,234,112,48,10
+    PUSHBUTTON      "+/-",IDC_BUTTON_CD_BURN_OP,193,111,23,11
+    PUSHBUTTON      "添加特定U盘",IDC_BUTTON_ADD_U_ID,217,36,63,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UDISK_PASSWD,230,80,50,14
+    CONTROL         150,IDC_STATIC_CCSB,"Static",SS_BITMAP,7,7,9,8
+    LTEXT           "存储设备控制",-1,21,7,42,8
+    PUSHBUTTON      "保存",IDC_BUTTON_STORAGE_SAVE,296,115,50,14
+END
+
+IDD_CONTROL_DEV_DIALOG DIALOGEX 0, 0, 353, 119
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "",-1,7,16,283,42
+    CONTROL         "禁用手机、PDA等便携式设备",IDC_CHECK_DEVICE_CELL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,26,117,10
+    CONTROL         "禁用手机助手",IDC_CHECK_PHONE_ASSIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,26,64,10
+    CONTROL         "禁用有线网卡",IDC_CHECK_NETWORK_WIRED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,41,60,10
+    CONTROL         "禁用无线网卡",IDC_CHECK_NETWORK_WIRELESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,41,59,10
+    CONTROL         "禁用随身WiFi",IDC_CHECK_NETWORK_MINI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,41,57,10
+    PUSHBUTTON      "+/-",IDC_BUTTON_PHONE_ASSIST_OP,209,25,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_NETWORK_MINI,258,40,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_NETWORK_WIRED,79,40,23,11
+    PUSHBUTTON      "+/-",IDC_BUTTON_NETWORK_WIRELESS,169,40,23,11
+    GROUPBOX        "",-1,7,72,283,40
+    CONTROL         "禁用蓝牙",IDC_CHECK_BLUETOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,80,48,10
+    CONTROL         "禁用串口/并口(x)",IDC_CHECK_SERIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,102,80,76,10
+    CONTROL         "禁用1394",IDC_CHECK_1394,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,80,48,10
+    CONTROL         "禁用红外",IDC_CHECK_IRDA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,95,48,10
+    CONTROL         "禁用PCMCIA(x)",IDC_CHECK_PCMCIA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,102,95,67,10
+    CONTROL         "禁用调制解调器",IDC_CHECK_MODEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,95,72,10
+    CONTROL         152,IDC_STATIC_DKSZ,"Static",SS_BITMAP,7,63,9,8
+    CONTROL         155,IDC_STATIC_ZNSB,"Static",SS_BITMAP,7,7,9,8
+    LTEXT           "端口控制",-1,22,63,28,8
+    LTEXT           "智能设备控制",-1,22,7,42,8
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,296,98,50,14
+END
+
+IDD_WINDOW_DIALOG DIALOGEX 0, 0, 252, 125
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "规则"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "普通",IDC_RADIO_NORMAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,64,7,32,10
+    CONTROL         "例外",IDC_RADIO_BLACK,"Button",BS_AUTORADIOBUTTON,107,7,32,10
+    CONTROL         "描述",IDC_RADIO_SPEC,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,148,7,32,10
+    EDITTEXT        IDC_EDIT_WINDOW,63,26,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CLASS,63,44,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROCESS,63,63,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESC,63,82,145,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,105,104,50,14
+    PUSHBUTTON      "取消",IDCANCEL,159,104,50,14
+    ICON            IDI_LOOK_ICON,IDC_LOOK,220,25,20,20,0,WS_EX_DLGMODALFRAME
+    LTEXT           "窗口类名",IDC_STATIC,5,47,50,8,0,WS_EX_RIGHT
+    LTEXT           "窗口名称",IDC_STATIC,7,29,48,8,0,WS_EX_RIGHT
+    LTEXT           "进程名称",IDC_STATIC,0,66,55,8,0,WS_EX_RIGHT
+    LTEXT           "文件描述",IDC_STATIC,3,84,52,8,0,WS_EX_RIGHT
+END
+
+IDD_LOGIN_MODIFY_DIALOG DIALOGEX 0, 0, 277, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "修改密码"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PASSWORD,73,7,197,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD2,73,25,197,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定(&O)",IDC_BTN_OK,165,49,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,220,49,50,14
+    LTEXT           "请输入口令",IDC_STATIC,7,9,41,8
+    LTEXT           "请再次输入口令",IDC_STATIC,7,28,57,8
+END
+
+IDD_DIALOG_NETWORK DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "上行带宽: 0",IDC_STATIC_UPLOAD,7,7,110,8
+    LTEXT           "下行带宽: 0",IDC_STATIC_DOWNLOAD,7,23,110,8
+    PUSHBUTTON      "刷新",IDC_BUTTON_REFRESH,139,19,50,14
+END
+
+IDD_DIALOG_PROGRAM DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "安装密码",IDC_STATIC,7,9,39,8
+    EDITTEXT        IDC_EDIT_PASSWORD,51,7,99,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_BUTTON_SET,162,7,50,14
+END
+
+IDD_DIALOG_MODIFY_COMMENT DIALOGEX 0, 0, 268, 51
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改备注"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,31,7,230,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,157,30,50,14
+    PUSHBUTTON      "取消",IDCANCEL,211,30,50,14
+    LTEXT           "备注",IDC_STATIC,7,9,17,8
+END
+
+IDD_DIALOG_UPGRADE DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "升级"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_UPGRADE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,301,149
+    PUSHBUTTON      "更新文件",IDC_BUTTON_UPGRADE,139,161,50,14
+    PUSHBUTTON      "重启服务",IDC_BUTTON_UPGRADE_SERVICE,199,161,50,14
+    PUSHBUTTON      "更新配置",IDC_BUTTON_UPGRADE_CONFIG,258,161,50,14
+END
+
+IDD_DIALOG_POLICY_EDIT DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_UPGRADE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,301,149
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,200,161,50,14
+    PUSHBUTTON      "保存",IDOK,258,161,50,14
+END
+
+IDD_GROUP_DIALOG DIALOGEX 0, 0, 214, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分组"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER,32,7,175,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,103,29,50,14
+    PUSHBUTTON      "取消",IDCANCEL,157,29,50,14
+    LTEXT           "名称",-1,7,10,17,8
+END
+
+IDD_GROUP_LIST_DIALOG DIALOGEX 0, 0, 214, 227
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分组列表"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,103,206,50,14
+    PUSHBUTTON      "取消",IDCANCEL,157,206,50,14
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,200,194
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,1,0,0
+ PRODUCTVERSION 5,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "Mac Manager"
+            VALUE "FileVersion", "5.1.0.0"
+            VALUE "InternalName", "MacManager.exe"
+            VALUE "LegalCopyright", "(C) www.grabsun.com. All rights reserved."
+            VALUE "OriginalFilename", "MacManager.exe"
+            VALUE "ProductName", "Mac Manager"
+            VALUE "ProductVersion", "5.1.0.0"
+            VALUE "SpecialBuild", "1200"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_DIALOG_APP_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        VERTGUIDE, 50
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_DIALOG_SCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 398
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_DIALOG_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_POLICY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_DIALOG_LOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_DIALOG_BLACKWHITE_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_DIALOG_REG_CHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_DIALOG_USER_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_USER_MODIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_DIALOG_USER_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_DIALOG_USER_MANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_URL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_UDISK_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_UDISK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 459
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_WINDOW_RULE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 425
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_USBMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 584
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 329
+    END
+
+    IDD_CONTROL_SYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_CONTROL_STORAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_CONTROL_DEV_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_WINDOW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_LOGIN_MODIFY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_DIALOG_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_PROGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_MODIFY_COMMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_DIALOG_UPGRADE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_POLICY_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_GROUP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_GROUP_LIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LOOK_CUR            CURSOR                  "res\\look.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// EXE
+//
+
+IDR_EXE_VNC_CLIENT      EXE                     "..\\tvnviewer.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BIN
+//
+
+IDR_BIN_WSDL            BIN                     "..\\Public\\gSoap\\ns.wsdl"
+IDR_BIN_CONFIG          BIN                     "..\\Win.ini"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_VERSION             "1.0"
+    IDS_TAB_DIR             "文件"
+    IDS_TAB_VERSION         "软件列表"
+    IDS_CHILD_NAME          "高级功能"
+    IDS_TAB_CMD             "远程命令"
+    ID_INDICATOR_IP         "IP: "
+    ID_INDICATOR_PATH       "路径: "
+    ID_INDICATOR_SIZE       "大小: "
+    IDS_TAB_PASSWORD        "密码"
+    ID_INDICATOR_LAST_LOGIN "最后登陆: "
+    IDS_TAB_SCREEN          "屏幕查看"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "SafeDiskManager"
+    IDS_TAB_CONTROL_PANEL   "控制台"
+    IDR_SafeDiskManagerTYPE "\nSafeDiskManager\nSafeDiskManager\n\n\nSafeDiskManager.Document\nSafeDiskManager.Document"
+    IDS_TAB_HOSTINFO        "主机分配"
+    IDS_WINDOWS_MANAGER     "窗口(&W)..."
+    IDS_TAB_PROGRAM         "只允许安装特定程序"
+    IDS_TITLE               "国家电网公司运维专区管理系统 - V5.1"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SafeDiskManager"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TAB_PROCESS         "进程控制"
+    IDS_TAB_SERVICE         "服务列表"
+    IDS_TAB_KEYBOARD        "键盘"
+    IDS_TAB_NETWORK         "网络连接"
+    IDS_TAB_CONTROL         "开关机控制"
+    IDS_MENU_PROCESS        "Process"
+    IDS_TAB_LOCK            "锁屏解锁"
+    IDS_TAB_BLACKWHITE_LIST "黑白名单控制"
+    IDS_TAB_CONTROL_DEV     "电脑设备控制"
+    IDS_TAB_CONTROL_STORAGE "存储设备控制"
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+    IDS_TAB_CONTROL_SYSTEM  "操作系统控制"
+    IDS_TAB_FILE            "文件管理"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_VIEW           "连接信息"
+    IDS_CLASS_VIEW          "类视图"
+    IDS_OUTPUT_WND          "操作日志"
+    IDS_PROPERTIES_WND      "属性"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPLORER            "资源管理器"
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BUILD_TAB           "生成"
+    IDS_DEBUG_TAB           "调试"
+    IDS_FIND_TAB            "查找"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TAB_NETWORK_RATE    "网络控制"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\SafeDiskManager.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#if !defined(_AFXDLL)
+#include "l.CHS\afxprint.rc"                // 打印/打印预览资源
+#include "l.CHS\afxribbon.rc"               // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

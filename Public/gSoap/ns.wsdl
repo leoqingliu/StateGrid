@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="Service"
+  targetNamespace="http://tempuri.org/ns.xsd/Service.wsdl"
+  xmlns:tns="http://tempuri.org/ns.xsd/Service.wsdl"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns="http://tempuri.org/ns.xsd"
+  xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:HTTP="http://schemas.xmlsoap.org/wsdl/http/"
+  xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+  xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+  xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+  xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+  <schema targetNamespace="http://tempuri.org/ns.xsd"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="http://tempuri.org/ns.xsd"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    <complexType name="PropInfoPojo"><!-- PropInfoPojo -->
+          <sequence>
+            <element name="propId" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- PropInfoPojo::propId -->
+            <element name="propName" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- PropInfoPojo::propName -->
+          </sequence>
+    </complexType>
+    <complexType name="TermInfoPojo"><!-- TermInfoPojo -->
+          <sequence>
+            <element name="termId" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- TermInfoPojo::termId -->
+            <element name="termName" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- TermInfoPojo::termName -->
+            <element name="termIp" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- TermInfoPojo::termIp -->
+            <element name="propId" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- TermInfoPojo::propId -->
+          </sequence>
+    </complexType>
+    <complexType name="SyndwsadataResponse"><!-- SyndwsadataResponse -->
+          <sequence>
+            <element name="responseVersion" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataResponse::responseVersion -->
+            <element name="requestCtxUUID" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataResponse::requestCtxUUID -->
+            <element name="responseCode" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataResponse::responseCode -->
+            <element name="responseExtCode" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataResponse::responseExtCode -->
+            <element name="responseMessage" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataResponse::responseMessage -->
+            <element name="lstPropInfo" type="ns:PropInfoPojo" minOccurs="0" maxOccurs="unbounded"/><!-- SyndwsadataResponse::lstPropInfo -->
+            <element name="lstTermInfo" type="ns:TermInfoPojo" minOccurs="0" maxOccurs="unbounded"/><!-- SyndwsadataResponse::lstTermInfo -->
+          </sequence>
+    </complexType>
+    <complexType name="SyndwsadataRequest"><!-- SyndwsadataRequest -->
+          <sequence>
+            <element name="requestVersion" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataRequest::requestVersion -->
+            <element name="requestCtxUUID" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataRequest::requestCtxUUID -->
+            <element name="requestUserCode" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataRequest::requestUserCode -->
+            <element name="requestUserPwd" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataRequest::requestUserPwd -->
+            <element name="requestUserName" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataRequest::requestUserName -->
+            <element name="requestAppCls" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataRequest::requestAppCls -->
+            <element name="requestAppInst" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsadataRequest::requestAppInst -->
+          </sequence>
+    </complexType>
+    <complexType name="SyndwsaTicketInfoRequest"><!-- SyndwsaTicketInfoRequest -->
+          <sequence>
+            <element name="wtCode" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoRequest::wtCode -->
+            <element name="wtPlanStartTime" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoRequest::wtPlanStartTime -->
+            <element name="wtPlanEndTime" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoRequest::wtPlanEndTime -->
+            <element name="lstPropInfo" type="ns:PropInfoPojo" minOccurs="0" maxOccurs="unbounded"/><!-- SyndwsaTicketInfoRequest::lstPropInfo -->
+            <element name="lstTermInfo" type="ns:TermInfoPojo" minOccurs="0" maxOccurs="unbounded"/><!-- SyndwsaTicketInfoRequest::lstTermInfo -->
+          </sequence>
+    </complexType>
+    <complexType name="SyndwsaTicketInfoResponse"><!-- SyndwsaTicketInfoResponse -->
+          <sequence>
+            <element name="responseVersion" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoResponse::responseVersion -->
+            <element name="requestCtxUUID" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoResponse::requestCtxUUID -->
+            <element name="responseCode" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoResponse::responseCode -->
+            <element name="responseExtCode" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoResponse::responseExtCode -->
+            <element name="responseMessage" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- SyndwsaTicketInfoResponse::responseMessage -->
+          </sequence>
+    </complexType>
+    <!-- operation request element -->
+    <element name="Syndwsadata">
+      <complexType>
+          <sequence>
+            <element name="request" type="ns:SyndwsadataRequest" minOccurs="1" maxOccurs="1"/><!-- ns__Syndwsadata::request -->
+          </sequence>
+      </complexType>
+    </element>
+    <!-- operation response element -->
+    <element name="SyndwsadataResponse">
+      <complexType>
+          <sequence>
+            <element name="serviceResponse" type="ns:SyndwsadataResponse" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__Syndwsadata::serviceResponse -->
+          </sequence>
+      </complexType>
+    </element>
+    <!-- operation request element -->
+    <element name="syndwsaTicketInfo">
+      <complexType>
+          <sequence>
+            <element name="request" type="ns:SyndwsaTicketInfoRequest" minOccurs="1" maxOccurs="1"/><!-- ns__syndwsaTicketInfo::request -->
+          </sequence>
+      </complexType>
+    </element>
+    <!-- operation response element -->
+    <element name="syndwsaTicketInfoResponse">
+      <complexType>
+          <sequence>
+            <element name="serviceResponse" type="ns:SyndwsaTicketInfoResponse" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__syndwsaTicketInfo::serviceResponse -->
+          </sequence>
+      </complexType>
+    </element>
+  </schema>
+
+</types>
+
+<message name="SyndwsadataRequest">
+  <part name="Body" element="ns:Syndwsadata"/><!-- ns__Syndwsadata::ns__Syndwsadata -->
+</message>
+
+<message name="SyndwsadataResponse">
+  <part name="Body" element="ns:SyndwsadataResponse"/>
+</message>
+
+<message name="syndwsaTicketInfoRequest">
+  <part name="Body" element="ns:syndwsaTicketInfo"/><!-- ns__syndwsaTicketInfo::ns__syndwsaTicketInfo -->
+</message>
+
+<message name="syndwsaTicketInfoResponse">
+  <part name="Body" element="ns:syndwsaTicketInfoResponse"/>
+</message>
+
+<portType name="ServicePortType">
+  <operation name="Syndwsadata">
+    <documentation>Service definition of function ns__Syndwsadata</documentation>
+    <input message="tns:SyndwsadataRequest"/>
+    <output message="tns:SyndwsadataResponse"/>
+  </operation>
+  <operation name="syndwsaTicketInfo">
+    <documentation>Service definition of function ns__syndwsaTicketInfo</documentation>
+    <input message="tns:syndwsaTicketInfoRequest"/>
+    <output message="tns:syndwsaTicketInfoResponse"/>
+  </operation>
+</portType>
+
+<binding name="Service" type="tns:ServicePortType">
+  <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="Syndwsadata">
+    <SOAP:operation soapAction=""/>
+    <input>
+          <SOAP:body parts="Body" use="literal"/>
+    </input>
+    <output>
+          <SOAP:body parts="Body" use="literal"/>
+    </output>
+  </operation>
+  <operation name="syndwsaTicketInfo">
+    <SOAP:operation soapAction=""/>
+    <input>
+          <SOAP:body parts="Body" use="literal"/>
+    </input>
+    <output>
+          <SOAP:body parts="Body" use="literal"/>
+    </output>
+  </operation>
+</binding>
+
+<service name="Service">
+  <documentation>gSOAP 2.8.32 generated service definition</documentation>
+  <port name="Service" binding="tns:Service">
+    <SOAP:address location="http://localhost:80"/>
+  </port>
+</service>
+
+</definitions>
