@@ -31,7 +31,7 @@ cd ..\Bin
 del MacManager.Bin.7z
 del 国家电网公司专区管理系统.exe
 copy MacManager.exe 国家电网公司专区管理系统.exe
-7z a MacManager.Bin.7z 国家电网公司专区管理系统.exe ClientOp.exe KeyMaker.exe
+7z a MacManager.Bin.7z 国家电网公司专区管理系统.exe ClientOp.exe KeyMaker.exe  
 
 @echo ========================================
 @echo Build Success
