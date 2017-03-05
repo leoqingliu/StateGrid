@@ -101,8 +101,7 @@ BOOL CClientOpApp::InitInstance()
 		return FALSE;
 	}
 	m_strTmpPath = szTmpPath;
-
-	m_strDllPath = m_strTmpPath + _T("CommuExt.dll");
+	m_strDllPath = _T("CommuExt.dll");
 	
 	CPasswordDlg dlgPass;
 	if (IDOK == dlgPass.DoModal())

@@ -92,8 +92,9 @@ BOOL CSvchostServiceModule::Install(LPCTSTR pszServiceName, LPTSTR lpDescription
 		szFilePath, NULL, NULL, NULL, NULL, NULL);
 	if (hService == NULL)
 	{
+		AfxMessageBox(GetLastError());
 		::CloseServiceHandle(hSCM);
-		OutputLog(_T("Couldn't create service"));
+		OutputLog(_T("Couldn't create service"));		
 		return FALSE;
 	}
 

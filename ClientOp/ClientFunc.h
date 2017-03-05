@@ -9,7 +9,7 @@ extern "C" {
 	typedef BOOL (CDECL *pfnUnInstallService)();
 
 #define DLL_LINK(var, type, name)  var = (type)GetProcAddress(m_hApiLib, name); \
-	if (NULL == var) break
+	if (NULL == var) break;
 
 #ifdef __cplusplus
 }

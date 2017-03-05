@@ -1,5 +1,5 @@
 @cls
-@Call "%VS90COMNTOOLS%vsvars32.bat"
+@Call "%VS110COMNTOOLS%vsvars32.bat"
 echo "Build"
 
 @devenv "TaskKeyHook.sln" 				/Rebuild "Release|Win32" 
@@ -24,8 +24,8 @@ echo "Build"
 @devenv "SafeDiskManager.sln" 			/Rebuild "Release|Win32" 
 @if not %errorlevel% ==0 goto exceptionEnd
 
-@devenv "KeyMaker.sln" 					/Rebuild "Release|Win32" 
-@if not %errorlevel% ==0 goto exceptionEnd
+REM @devenv "KeyMaker.sln" 					/Rebuild "Release|Win32" 
+REM @if not %errorlevel% ==0 goto exceptionEnd
 
 cd ..\Bin
 del MacManager.Bin.7z

@@ -97,7 +97,8 @@
       <OutputFile>.\../../Bin/ResEdit.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>cd ..\Tools &amp;&amp; Sign.bat $(TargetPath)</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

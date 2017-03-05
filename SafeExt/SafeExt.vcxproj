@@ -119,7 +119,7 @@
     <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
-    <OutDir>..\..\Bin\</OutDir>
+    <OutDir>r</OutDir>
     <IntDir>.\ReleaseUMinSize\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
@@ -189,12 +189,13 @@
       <OutputFile>$(OutDir)CommuExt.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ModuleDefinitionFile>.\SafeExt.def</ModuleDefinitionFile>
-      <ProgramDatabaseFile>.\Bin/SafeExt.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>.\Bin/CommuExt.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
       <ImportLibrary>.\Bin/SafeExt.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>

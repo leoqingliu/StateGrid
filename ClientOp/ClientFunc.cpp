@@ -10,12 +10,12 @@ BOOL InitClientLibrary(LPCTSTR pPath)
 	m_hApiLib = LoadLibrary(pPath);
 	if (NULL == m_hApiLib)
 	{
-		return FALSE;
+		return FALSE;		
 	}
-
+	
 	BOOL bLoadRet = FALSE;
 	do
-	{
+	{		
 		DLL_LINK(_InstallService,	pfnInstallService,		"InstallService");
 		DLL_LINK(_UnInstallService,	pfnUnInstallService,	"UnInstallService");
 		bLoadRet = TRUE;

@@ -62,3 +62,27 @@ using namespace std;
 #endif
 
 #include "../Public/Debug.h"
+
+#define LEO_DEBUG
+#ifdef LEO_DEBUG
+#include <fstream>
+#include <mutex>
+static std::mutex g_logLock;
+static std::ofstream g_ofs;
+static std::wofstream g_wofs;
+#define LOG_TO_FILE(str) { \
+       std::lock_guard<std::mutex> wl(g_logLock);      \
+       g_ofs.open("G:\\log.txt", std::ios::app);       \
+       g_ofs<<str<<std::endl;                                        \
+       g_ofs.close();                                                       \
+}
+#define LOG_TO_FILE_W(str) {      \
+       std::lock_guard<std::mutex> wl(g_logLock);      \
+       g_wofs.open("G:\\log.txt", std::ios::app);      \
+       g_wofs<<str<<std::endl;                                       \
+       g_wofs.close();                                                      \
+}
+#else
+#define LOG_TO_FILE(str)
+#define LOG_TO_FILE_W(str)
+#endif

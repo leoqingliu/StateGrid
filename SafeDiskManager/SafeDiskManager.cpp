@@ -421,7 +421,7 @@ BOOL CSafeDiskManagerApp::InitInstance()
 				//	AfxMessageBox(_T("×¢²áÊ§°Ü£¡"), MB_ICONERROR);
 				//	return FALSE;
 				strKey = _T("");
-				continue;
+//				continue;
 			}
 
 			break;
