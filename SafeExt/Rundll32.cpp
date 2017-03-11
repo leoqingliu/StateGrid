@@ -31,8 +31,7 @@ STDAPI_(BOOL) InstallService()
 	TCHAR szDescription[MAX_PATH];
 	lstrcpy(szDescription, SERVICE_DLL_DESC);
 	TCHAR szDllPath[MAX_PATH] = L"";
-	CSvchostServiceModule::GetDllPath(szDllPath, SERVICE_DLL_FILE_NAME, GetCurrentProcessId());
-	AfxMessageBox(szDllPath);
+	CSvchostServiceModule::GetDllPath(szDllPath, SERVICE_DLL_FILE_NAME, GetCurrentProcessId());	
 	BOOL bRet = CSvchostServiceModule::Install(szServiceName, szDescription, szDllPath, _T("MacMan"));
 	if (bRet)
 	{

@@ -119,10 +119,11 @@
     <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|Win32'">
-    <OutDir>r</OutDir>
+    <OutDir>..\..\Bin\</OutDir>
     <IntDir>.\ReleaseUMinSize\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
+    <TargetName>CommuExt</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release MinSize|x64'">
     <OutDir>..\..\Bin\</OutDir>
