@@ -15,6 +15,9 @@ echo "Build"
 @devenv "ResEdit\ResEdit.sln" 		/Rebuild "Release|Win32" 
 @if not %errorlevel% ==0 goto exceptionEnd
 
+@devenv "ServiceUpgrade.sln" 				/Rebuild "Release|Win32" 
+@if not %errorlevel% ==0 goto exceptionEnd
+
 @devenv "SafeExt.sln" 					/Rebuild "Unicode Release MinSize|Win32" 
 @if not %errorlevel% ==0 goto exceptionEnd
 
